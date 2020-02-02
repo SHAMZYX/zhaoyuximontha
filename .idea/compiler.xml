@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zhaoyuxi-nacos-gateway" />
+        <module name="zhaoyuxi-mongdb-log-server" />
+        <module name="zhaoyuxi-nacos-jpa-server" />
+        <module name="zhaoyuxi-nacos-feign-client" />
+        <module name="zhaoyuxi--student-jpa-server" />
+        <module name="zhaoyuximonthacommon" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zhaoyuxi--student-jpa-server" target="1.8" />
+      <module name="zhaoyuxi-nacos-gateway (1)" target="1.8" />
+      <module name="zhaoyuxi-nacos-gateway (2)" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="zhaoyuxi--student-jpa-server" options="-parameters" />
+      <module name="zhaoyuxi-mongdb-log-server" options="-parameters" />
+      <module name="zhaoyuxi-nacos-feign-client" options="-parameters" />
+      <module name="zhaoyuxi-nacos-gateway" options="-parameters" />
+      <module name="zhaoyuxi-nacos-gateway (1)" options="-parameters" />
+      <module name="zhaoyuxi-nacos-gateway (2)" options="-parameters" />
+      <module name="zhaoyuxi-nacos-jpa-server" options="-parameters" />
+      <module name="zhaoyuximonthacommon" options="-parameters" />
+    </option>
+  </component>
+</project>

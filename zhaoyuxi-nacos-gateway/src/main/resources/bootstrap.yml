@@ -1,0 +1,23 @@
+server:
+  port: 8095
+
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: false   #是否与服务注册于发现组件进行结合，设为true便开启通过服务中心的自动根据 serviceId 创建路由的功能。
+          lowerCaseServiceId: true   #该配置开启后，服务名可以小写
+      #设置为false后自行配置
+      routes:
+        - id: student-client
+          uri: lb://student-client
+          predicates:
+            - Path=/client/**
+          filters:
+            - StripPrefix=1
